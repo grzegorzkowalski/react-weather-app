@@ -1,0 +1,68 @@
+:root {
+  --main-font: 'Poppins', sans-serif;
+
+  --gradient-font: '';
+  --main-text: #ffffff;
+  --white: #ffffff;
+  --light: #d9d9d9;
+  --card-bg: #444444;
+  --card-dark-bg: #373636;
+  --white-80: #ffffff80;
+  --white-60: #ffffff60;
+  --green: #4cbb17;
+  --black: #000;
+  --black-20: #00000020;
+  --black-50: #00000050;
+  --bg-gradient: linear-gradient(to left, #000000, #444444);
+  --day-gradient: linear-gradient(to bottom, #f88508, #f6fad9);
+  --night-gradient: linear-gradient(to bottom, #443d64, #6582c6);
+}
+
+*,
+::before,
+::after {
+  font-family: var(--main-font);
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+*:focus {
+  outline: 2px solid var(--white);
+}
+
+body {
+  min-height: 100dvh;
+  background: no-repeat var(--bg-gradient) center/cover;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+.container {
+  max-width: 1340px;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border-radius: 30px;
+  box-shadow: 10px 10px 4px 0 var(--black-50);
+}
